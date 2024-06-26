@@ -17,7 +17,7 @@ extension UIImage {
         let originalRatio = originalHeight / originalWidth
         
         // 目标宽高比
-        let targetRatio = targetSize.height / targetSize.width
+//        let targetRatio = targetSize.height / targetSize.width
         
         // 如果原始图片长宽都小于或等于目标尺寸，直接返回原图
         guard originalWidth > targetSize.width || originalHeight > targetSize.height else {

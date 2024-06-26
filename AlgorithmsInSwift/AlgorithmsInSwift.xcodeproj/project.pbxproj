@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960600012C2C24C500E5192D /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960600002C2C24C500E5192D /* MergeSort.swift */; };
 		9606FFDA2C2B951500E5192D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606FFD92C2B951500E5192D /* AppDelegate.swift */; };
 		9606FFDC2C2B951500E5192D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606FFDB2C2B951500E5192D /* SceneDelegate.swift */; };
 		9606FFDE2C2B951500E5192D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606FFDD2C2B951500E5192D /* ViewController.swift */; };
@@ -17,9 +18,11 @@
 		9606FFF52C2B959400E5192D /* rename.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9606FFF12C2B959400E5192D /* rename.rb */; };
 		9606FFF72C2B95FE00E5192D /* find_rename_classes.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9606FFF62C2B95FE00E5192D /* find_rename_classes.rb */; };
 		9606FFFA2C2B997600E5192D /* UIImage+resizeAndCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606FFF92C2B997600E5192D /* UIImage+resizeAndCrop.swift */; };
+		9606FFFE2C2C1C3500E5192D /* InsertSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606FFFD2C2C1C3500E5192D /* InsertSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960600002C2C24C500E5192D /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		9606FFD62C2B951500E5192D /* AlgorithmsInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmsInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9606FFD92C2B951500E5192D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9606FFDB2C2B951500E5192D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		9606FFF12C2B959400E5192D /* rename.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rename.rb; sourceTree = "<group>"; };
 		9606FFF62C2B95FE00E5192D /* find_rename_classes.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = find_rename_classes.rb; path = "../../../../../ChatMe-iOS/find_rename_classes.rb"; sourceTree = "<group>"; };
 		9606FFF92C2B997600E5192D /* UIImage+resizeAndCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resizeAndCrop.swift"; sourceTree = "<group>"; };
+		9606FFFD2C2C1C3500E5192D /* InsertSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		9606FFEE2C2B952600E5192D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				9606FFFB2C2C1BF600E5192D /* 算法基础2 */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -109,6 +114,31 @@
 				9606FFF92C2B997600E5192D /* UIImage+resizeAndCrop.swift */,
 			);
 			path = "聊天列表图片缩略图生成";
+			sourceTree = "<group>";
+		};
+		9606FFFB2C2C1BF600E5192D /* 算法基础2 */ = {
+			isa = PBXGroup;
+			children = (
+				9606FFFC2C2C1C0200E5192D /* 插入排序2.2 */,
+				9606FFFF2C2C244900E5192D /* 设计算法-分治法2.3 */,
+			);
+			path = "算法基础2";
+			sourceTree = "<group>";
+		};
+		9606FFFC2C2C1C0200E5192D /* 插入排序2.2 */ = {
+			isa = PBXGroup;
+			children = (
+				9606FFFD2C2C1C3500E5192D /* InsertSort.swift */,
+			);
+			path = "插入排序2.2";
+			sourceTree = "<group>";
+		};
+		9606FFFF2C2C244900E5192D /* 设计算法-分治法2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				960600002C2C24C500E5192D /* MergeSort.swift */,
+			);
+			path = "设计算法-分治法2.3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960600012C2C24C500E5192D /* MergeSort.swift in Sources */,
+				9606FFFE2C2C1C3500E5192D /* InsertSort.swift in Sources */,
 				9606FFDE2C2B951500E5192D /* ViewController.swift in Sources */,
 				9606FFFA2C2B997600E5192D /* UIImage+resizeAndCrop.swift in Sources */,
 				9606FFDA2C2B951500E5192D /* AppDelegate.swift in Sources */,
