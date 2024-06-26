@@ -11,6 +11,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Sort().insertSort()
+        print("=============")
+        Sort().selectionSort()
+        print("=============")
+        Sort().MergeSort()
+        print("=============")
+        Sort().insert_recurve()
+        
         // Do any additional setup after loading the view.
     }
 
