@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         Sort().MergeSort()
         print("=============")
         Sort().insert_recurve()
+        print("=============")
+        Sort().bubbleSort()
         
         // Do any additional setup after loading the view.
     }

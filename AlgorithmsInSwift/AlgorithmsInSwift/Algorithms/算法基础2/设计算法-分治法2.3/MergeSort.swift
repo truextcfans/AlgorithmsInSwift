@@ -93,4 +93,64 @@ extension Sort {
     }
     
     
+    func findSum() {
+        var array = [9,11,10, 8, 7, 6, 5, 4]
+        var sum = 17
+
+        if let set = findTwoSum(array, sum) {
+            print("find \(set.0) + \(set.1) = \(sum)")
+        } else {
+            print("no find")
+        }
+        
+    }
+    
+    func findTwoSum(_ nums: [Int], _ target: Int) -> (Int, Int)? {
+        // 对数组进行排序
+        let sortedNums = nums.sorted()
+        
+        // 初始化两个指针
+        var left = 0
+        var right = sortedNums.count - 1
+        
+        // 使用双指针查找
+        while left < right {
+            let sum = sortedNums[left] + sortedNums[right]
+            if sum == target {
+                // 找到两个元素
+                return (sortedNums[left], sortedNums[right])
+            } else if sum < target {
+                // 如果当前和小于目标值，移动左指针
+                left += 1
+            } else {
+                // 如果当前和大于目标值，移动右指针
+                right -= 1
+            }
+        }
+        
+        // 如果没有找到，返回 nil
+        return nil
+    }
+
+
+    
+}
+
+
+extension Sort {
+    
+    func bubbleSort(){
+        var array = [9,11,10, 8, 7, 6, 5, 4]
+
+        for i in 0..<array.count {
+            for j in (i+1..<array.count).reversed() {
+                if array[j] < array[j-1] {
+                    array.swapAt(j, j-1)
+                    print(array)
+                }
+            }
+        }
+        
+        
+    }
 }
