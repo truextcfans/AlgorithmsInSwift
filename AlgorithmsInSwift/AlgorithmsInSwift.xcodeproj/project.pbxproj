@@ -19,6 +19,7 @@
 		9606FFF72C2B95FE00E5192D /* find_rename_classes.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9606FFF62C2B95FE00E5192D /* find_rename_classes.rb */; };
 		9606FFFA2C2B997600E5192D /* UIImage+resizeAndCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606FFF92C2B997600E5192D /* UIImage+resizeAndCrop.swift */; };
 		9606FFFE2C2C1C3500E5192D /* InsertSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606FFFD2C2C1C3500E5192D /* InsertSort.swift */; };
+		96CD38B42C3037D7008FE297 /* MaxSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CD38B32C3037D7008FE297 /* MaxSubArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9606FFF62C2B95FE00E5192D /* find_rename_classes.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = find_rename_classes.rb; path = "../../../../../ChatMe-iOS/find_rename_classes.rb"; sourceTree = "<group>"; };
 		9606FFF92C2B997600E5192D /* UIImage+resizeAndCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resizeAndCrop.swift"; sourceTree = "<group>"; };
 		9606FFFD2C2C1C3500E5192D /* InsertSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSort.swift; sourceTree = "<group>"; };
+		96CD38B32C3037D7008FE297 /* MaxSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxSubArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		960600022C2D5AD600E5192D /* 分治策略 */ = {
+			isa = PBXGroup;
+			children = (
+				96CD38B52C3037E0008FE297 /* 最大子数组4.1 */,
+			);
+			path = "分治策略";
+			sourceTree = "<group>";
+		};
 		9606FFCD2C2B951500E5192D = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				9606FFFB2C2C1BF600E5192D /* 算法基础2 */,
+				960600022C2D5AD600E5192D /* 分治策略 */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -139,6 +150,14 @@
 				960600002C2C24C500E5192D /* MergeSort.swift */,
 			);
 			path = "设计算法-分治法2.3";
+			sourceTree = "<group>";
+		};
+		96CD38B52C3037E0008FE297 /* 最大子数组4.1 */ = {
+			isa = PBXGroup;
+			children = (
+				96CD38B32C3037D7008FE297 /* MaxSubArray.swift */,
+			);
+			path = "最大子数组4.1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +236,7 @@
 			files = (
 				960600012C2C24C500E5192D /* MergeSort.swift in Sources */,
 				9606FFFE2C2C1C3500E5192D /* InsertSort.swift in Sources */,
+				96CD38B42C3037D7008FE297 /* MaxSubArray.swift in Sources */,
 				9606FFDE2C2B951500E5192D /* ViewController.swift in Sources */,
 				9606FFFA2C2B997600E5192D /* UIImage+resizeAndCrop.swift in Sources */,
 				9606FFDA2C2B951500E5192D /* AppDelegate.swift in Sources */,

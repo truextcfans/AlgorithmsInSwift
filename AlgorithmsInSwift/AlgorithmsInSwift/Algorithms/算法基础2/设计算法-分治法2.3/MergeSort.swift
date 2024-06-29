@@ -138,10 +138,8 @@ extension Sort {
 
 
 extension Sort {
-    
     func bubbleSort(){
         var array = [9,11,10, 8, 7, 6, 5, 4]
-
         for i in 0..<array.count {
             for j in (i+1..<array.count).reversed() {
                 if array[j] < array[j-1] {
@@ -150,7 +148,34 @@ extension Sort {
                 }
             }
         }
+    }
+}
+
+extension Sort {
+    /// 多项式霍纳规则
+    func horner(){
+        ///　y = a0 + a1 * x + a2 * x^2 + .... an * x^n
+        var anArray: [Double] = [2,3,5,7,8,9,4]
+        ///
+        var x = 0.3
         
+        ///　y = a0 + x * ( a1 + x * ( a2 + x * ( a3 + ..... + x *(an-1 + x * an)   ..... ) ) )
         
+//        for var i = anArray.count - 1 , i > 0 , i -= 1 {
+//
+//        }
+        var y = anArray.last ?? 0
+        
+        for i in (0..<anArray.count-1).reversed() {
+            y = x * y + anArray[i]
+        }
+        
+        print(y)
+        
+        /// 多项式霍纳规则 使用了 n次乘法 以及 n次加法
+        /// 直接计算
+        ///　y = a0 + a1 * x + a2 * x^2 + .... an * x^n
+        ///　0 + 1 + 2 + ... n = n * (n-1) / 2 次乘法 以及 n次加法
+
     }
 }

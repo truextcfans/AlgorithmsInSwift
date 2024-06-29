@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         print("=============")
         Sort().bubbleSort()
         
+        MaxSubArray().findMaxSubArray()
+        MaxSubArray().findMaxSubArray_kadane()
+        
         // Do any additional setup after loading the view.
     }
 
